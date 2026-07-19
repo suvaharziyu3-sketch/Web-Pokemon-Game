@@ -1,1 +1,32 @@
 # Web-Pokemon-Game
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pokemon Style Battle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="battle">
+        <div class="player" id="player1">
+            <h2>Fire Creature 🔥</h2>
+            <p>HP: <span id="hp1">100</span></p>
+            <button onclick="attack('player1','player2')">Attack</button>
+            <button onclick="defend('player1')">Defend</button>
+            <button onclick="special('player1','player2')">Special</button>
+        </div>
+
+        <div class="player" id="player2">
+            <h2>Water Creature 💧</h2>
+            <p>HP: <span id="hp2">100</span></p>
+            <button onclick="attack('player2','player1')">Attack</button>
+            <button onclick="defend('player2')">Defend</button>
+            <button onclick="special('player2','player1')">Special</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
